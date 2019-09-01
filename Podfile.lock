@@ -1,0 +1,16 @@
+PODS:
+  - BOTestTools (0.1.0)
+
+DEPENDENCIES:
+  - BOTestTools
+
+SPEC REPOS:
+  https://github.com/Lwindy/BOTestSpec.git:
+    - BOTestTools
+
+SPEC CHECKSUMS:
+  BOTestTools: 858b8d1f01de50d5c60482f8d33595352eedc1b7
+
+PODFILE CHECKSUM: 3d4861a815f10a068947d4bad24b518224c5a9c1
+
+COCOAPODS: 1.5.3

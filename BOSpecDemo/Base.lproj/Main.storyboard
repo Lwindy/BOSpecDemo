@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BOSpecDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YBP-fx-dy7">
+                                <rect key="frame" x="67" y="360" width="241" height="127"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eoo-AD-rhe">
+                                <rect key="frame" x="127.5" y="270" width="120" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="eZW-O8-ZZm"/>
+                                    <constraint firstAttribute="height" constant="44" id="uFu-Pu-1p1"/>
+                                </constraints>
+                                <state key="normal" title="加载图片">
+                                    <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rcc-QE-oPk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YBP-fx-dy7" secondAttribute="bottom" constant="180" id="2YP-HU-Fdk"/>
+                            <constraint firstItem="Eoo-AD-rhe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="C5v-G2-MDD"/>
+                            <constraint firstItem="Eoo-AD-rhe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cuf-z7-sTc"/>
+                            <constraint firstItem="YBP-fx-dy7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NSc-fJ-Sxo"/>
+                            <constraint firstItem="YBP-fx-dy7" firstAttribute="top" secondItem="Eoo-AD-rhe" secondAttribute="bottom" constant="46" id="dP2-q7-A65"/>
+                            <constraint firstItem="YBP-fx-dy7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="pTA-1T-BPt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn" destination="Eoo-AD-rhe" id="rmB-uF-2Lf"/>
+                        <outlet property="imgView" destination="YBP-fx-dy7" id="9gr-WE-9gE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
